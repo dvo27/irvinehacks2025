@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import FontAwesome from "@expo/vector-icons/FontAwesome"
-import { Ionicons } from "@expo/vector-icons"
+import { Ionicons, MaterialIcons } from "@expo/vector-icons"
 import { MaterialCommunityIcons } from "@expo/vector-icons"
 import { Tabs, Redirect } from "expo-router"
 import * as SecureStore from "expo-secure-store"
@@ -31,10 +31,10 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="inventory"
         options={{
-          title: "Settings",
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
+          title: "Inventory",
+          tabBarIcon: ({ color }) => <MaterialIcons size={28} name="inventory" color={color} />,
         }}
       />
     </Tabs>
