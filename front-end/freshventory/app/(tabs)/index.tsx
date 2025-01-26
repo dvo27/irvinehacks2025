@@ -1,4 +1,5 @@
 import { CameraView, CameraType, useCameraPermissions } from "expo-camera";
+import React from "react";
 import { useRef, useState } from "react";
 import {
   Button,
